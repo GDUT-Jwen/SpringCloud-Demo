@@ -1,0 +1,17 @@
+server:
+  port: 6012
+spring:
+  application:
+    name: ordercenter
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+  server:
+    enable-self-preservation: false
+  client:
+    registerWithEureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone:
+        http://localhost:6010/eureka/

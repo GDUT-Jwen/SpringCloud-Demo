@@ -1,0 +1,17 @@
+server:
+  port: 6018
+spring:
+  application:
+    name: goodscenter
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+  server:
+    enable-self-preservation: false
+  client:
+    registerWithEureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone:
+        http://localhost:6010/eureka/
